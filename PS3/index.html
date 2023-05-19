@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>PlayStation 3</title>
+		<link rel="icon" type="image/x-icon" href="/assets/icon.png" />
+
+		<link rel="stylesheet" href="/styles.css" />
+		<script src="/main.js" defer></script>
+	</head>
+	<body>
+		<header></header>
+		<div class="container">
+			<aside></aside>
+			<main class="ps3">
+				<div class="article" id="hen">
+					<h1>Installing HEN</h1>
+					<p>soon</p>
+				</div>
+
+				<div class="article" id="hen">
+					<h1>Updating HEN</h1>
+					<p>soon</p>
+				</div>
+
+				<div class="article" id="pkgi">
+					<h1>Installing PKGI</h1>
+					<p>
+						<p>PKGI is a piracy store for PS3 games.</p>
+
+						<p>
+							<h2>Prerequisites</h2>
+							<li>An active internet connection</li>
+							<li>HFW or CFW</li>
+							<li>Multiman, Irisman or any other file manager</li>
+							<li>USB Stick</li>
+							
+						</p>
+						
+						<div>
+							<h2>How to Setup</h2>
+							<li>Download the <a href="https://store.brewology.com/ahomebrew.php?brewid=320" target="_blank">pkgi</a> pkg.</li>
+							<li>Download the <a href="/files/config.txt" download>config</a>.</li>
+							<li>Download the <a href="/files/dbformat.txt" download>database</a>.</li>
+							<li>Put these files on your USB.</li>
+							<p>TIP: put the files in the NP00PKGI3/USRDIR folder on your USB to match the folder structure on your PlayStation.</p>
+							<li>Put your USB stick in the right usb port.</li>
+							<li>On your XMB install the pkgi pkg. Package Manager > Install Package Files > Standard</li>
+							<li>Open Multiman or any other file manager.</li>
+							<li>Navigate to the location you put your files on your USB.</li>
+							<li>Navigate to the location dev_hdd0/game/NP00PKGI3/USRDIR in another file explorer.</li>
+							<li>Copy the files from your USB to your dev_hdd0.</li>
+
+							<p>
+								Your files should look something like this.<br>
+
+								<img class="banner" src="/assets/PS3 - PKGI.png" >
+							</p>
+
+							<li>Close your application.</li>
+							<li>Open PKGI.</li>
+							<li>Press triangle</li>
+							<p>
+								<img class="banner" src="/assets/PS3 - PKGI Context Menu.png" >
+							</p>
+							<li>Navigate to the refresh button at the bottom of the context menu.</li>
+							<li>Your games should be loaded now.</li>
+						</div>
+
+						<p>
+							<h2>Sources</h2>
+							
+							Github: <a href="https://github.com/bucanero/pkgi-ps3" target="_blank">pkgi-ps3</a>
+						</p>
+					</p>
+				</div>
+
+				<div class="article" id="dns">
+					<h1>Setting your DNS</h1>
+					<p>
+						<p>
+							<h2>Prerequisites</h2>
+							<li>An active internet connection</li>
+						</p>
+
+						<div>
+							<img class="banner" src="/assets/PS3 - Network settings.png">
+							<p>
+								<li>Go over to your network settings</li>
+								<li>Select `Internet Connection Settings`</li>
+								<li>Select `Custom`</li>
+								<li>Select your connection method - Wired Connection - Wireless > Proceed with its setup.</li>
+								<li>You should be at the IP Address Setting now** Set the IP Address Setting to `Automatic`</li>
+								<li>Set your DHCP host name to `Do Not Set`</li>
+								<li>Select DNS Setting `Manual`</li>
+								<li>Set the DNS settings to a private server.</li>
+								<li>Set MTU to `Automatic`</li>
+								<li>Set Proxy Server to `Do Not Use`</li>
+								<li>Set UPnP to `Enable`</li>
+								<li>Accept all the settings and test your connection. Sign into PSN and enjoy your game. </li>						
+							</p>
+						</div>
+
+						<p>
+						DISCLAIMER: Force setting your DNS might prevent you from creating/joining online lobbies on other games.
+						</p>
+					</p>
+				</div>
+			</main>
+		</div>
+	</body>
+</html>

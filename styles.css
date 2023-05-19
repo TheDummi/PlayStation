@@ -1,0 +1,181 @@
+body {
+	background-color: rgba(31, 33, 38);
+	color: white;
+	margin: 0px;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+	overflow-x: hidden;
+}
+
+.grid-container {
+	position: relative;
+	display: inline-grid;
+	grid-template-columns: auto auto;
+	gap: 10px;
+	padding: 15px;
+}
+
+.grid-item {
+	height: 30vh;
+	width: 35vw;
+	box-shadow: 0px 2px rgba(0, 0, 0, 0.4);
+	border-radius: 0.25rem;
+	background-color: rgba(255, 255, 255, 0.1);
+	text-align: left;
+	padding: 15px;
+	animation-name: closeItem;
+	animation-duration: 1s;
+}
+
+.page-link {
+	text-decoration: none;
+	color: inherit;
+}
+
+.header-link {
+	text-decoration: none;
+	color: inherit;
+	text-align: center;
+	padding: 15px;
+	margin-left: 7.5px;
+	margin-right: 7.5px;
+	width: auto;
+}
+
+.aside-link {
+	text-decoration: none;
+	color: inherit;
+	text-align: center;
+	padding: 15px;
+}
+
+.header-link:hover,
+.aside-link:hover {
+	background-color: rgba(255, 255, 255, 0.1);
+	border-radius: 0.25rem;
+}
+
+.banner {
+	width: 25vw;
+}
+
+.article {
+	border-bottom: 2px solid black;
+}
+
+@keyframes openItem {
+	from {
+		width: 35vw;
+		height: 30vh;
+	}
+	to {
+		width: 60vw;
+		height: 55vh;
+	}
+}
+
+@keyframes closeItem {
+	from {
+		width: 60vw;
+		height: 55vh;
+	}
+	to {
+		width: 35vw;
+		height: 30vh;
+	}
+}
+
+.grid-item:hover {
+	border: 2px solid blue;
+	animation-name: openItem;
+	animation-fill-mode: forwards;
+	animation-duration: 1.5s;
+}
+
+#psx {
+	background-image: url(./assets/PSX.png);
+	background-size: cover;
+}
+
+#ps2 {
+	background-image: url(./assets/PS2.png);
+	background-size: cover;
+}
+
+#ps3 {
+	background-image: url(./assets/PS3.png);
+	background-size: cover;
+}
+
+#ps4 {
+	background-image: url(./assets/PS4.png);
+	background-size: cover;
+}
+
+#psp {
+	background-image: url(./assets/PSP.png);
+	background-size: cover;
+}
+
+#psvita {
+	background-image: url(./assets/PSVita.png);
+	background-size: cover;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+}
+
+header {
+	position: fixed;
+	background-color: rgb(0, 0, 0, 0.9);
+	box-shadow: 0px 2px rgba(0, 0, 0, 0.4);
+	height: 5vh;
+	width: 100vw;
+	z-index: 1;
+	border-radius: 0.5rem;
+}
+
+aside {
+	display: flex;
+	flex-direction: column;
+	position: relative;
+	top: 5vh;
+	width: 15vw;
+	background-color: rgba(255, 255, 255, 0.1);
+	box-shadow: 0px 2px rgba(0, 0, 0, 0.4);
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	padding: 15px;
+	position: relative;
+	top: 5vh;
+	width: 100%;
+	box-shadow: 0px 2px rgba(0, 0, 0, 0.4);
+}
+
+a {
+	text-decoration: none;
+	color: lightseagreen;
+}
+
+::-webkit-scrollbar {
+	width: 15px;
+}
+
+::-webkit-scrollbar-track {
+	border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb {
+	border: 2px solid black;
+	border-radius: 0.5rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	border: 2px solid grey;
+}
