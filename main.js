@@ -4,7 +4,7 @@ const main = document.getElementsByTagName('main').item(0);
 
 if (header) {
 	header.innerHTML = `<div class="container">
-	<a class="header-link" href="/">Home</a>
+	<a class="header-link" href="/PlayStation">Home</a>
     <a class="header-link" href="/PlayStation/PSX">PlayStation X</a>
     <a class="header-link" href="/PlayStation/PS2">PlayStation 2</a>
     <a class="header-link" href="/PlayStation/PS3">PlayStation 3</a>
