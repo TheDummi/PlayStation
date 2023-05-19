@@ -18,13 +18,22 @@ body {
 .grid-item {
 	height: 30vh;
 	width: 35vw;
-	box-shadow: 0px 2px rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 2px rgba(0, 0, 0, 0.4), 0.25rem;
 	border-radius: 0.25rem;
 	background-color: rgba(255, 255, 255, 0.1);
 	text-align: left;
 	padding: 15px;
 	animation-name: closeItem;
 	animation-duration: 1s;
+}
+
+a {
+	text-decoration: none;
+	color: lightseagreen;
+}
+
+a:hover {
+	color: rgba(255, 255, 255, 0.4);
 }
 
 .page-link {
@@ -53,6 +62,7 @@ body {
 .aside-link:hover {
 	background-color: rgba(255, 255, 255, 0.1);
 	border-radius: 0.25rem;
+	color: inherit;
 }
 
 .banner {
@@ -86,10 +96,10 @@ body {
 }
 
 .grid-item:hover {
-	border: 2px solid blue;
+	border: 2px solid rgba(255, 255, 255, 0.4);
 	animation-name: openItem;
 	animation-fill-mode: forwards;
-	animation-duration: 1.5s;
+	animation-duration: 1s;
 }
 
 #psx {
@@ -130,7 +140,7 @@ body {
 header {
 	position: fixed;
 	background-color: rgb(0, 0, 0, 0.9);
-	box-shadow: 0px 2px rgba(0, 0, 0, 0.4);
+	box-shadow: 0px 2px rgba(0, 0, 0, 0.4) 0.5rem;
 	height: 5vh;
 	width: 100vw;
 	z-index: 1;
@@ -158,11 +168,6 @@ main {
 	box-shadow: 0px 2px rgba(0, 0, 0, 0.4);
 }
 
-a {
-	text-decoration: none;
-	color: lightseagreen;
-}
-
 ::-webkit-scrollbar {
 	width: 15px;
 }
@@ -177,5 +182,5 @@ a {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-	border: 2px solid grey;
+	border: 2px solid rgba(255, 255, 255, 0.4);
 }
